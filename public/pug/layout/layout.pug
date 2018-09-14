@@ -1,33 +1,78 @@
 <!DOCTYPE html>
-html(lang="en")
-	- const publicPath = process.env.NODE_ENV == 'production' ? '/' : './';
+html(lang="ru")
 	head
-		title 
+		title FXCOINS - заработок на финансовых рынках
+		meta(charset="utf-8")
 		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
-
-		meta(name='keywords', content='')
-		meta(name='description', content='')
-
-		meta(name='twitter:card', content='summary_large_image')
-		meta(name='twitter:title', content="")
-		meta(name='twitter:description', content='')
-		meta(name='twitter:image', content='')
-		meta(name='twitter:image:alt', content="")
-		meta(property='og:title', content="")
-		meta(property='og:site_name', content='')
-		meta(property='og:url', content='')
-		meta(property='og:description', content="")
+		meta(name='keywords', content='DAX100, trading, forex, cfd, etf, index, target, market, отзывы, комментарии, рейтинг')
+		meta(name='description', content='Получай 500 евро на счет и торгуй контрактами CFD на акции, индексами и валютой ПРЯМО СЕЙЧАС. DAX100 Отзывы. DAX')
+		meta(property='vk:image', content='http://market.dax100.org/public/img/hello_background.jpg')
+		meta(property='og:image', content='http://market.dax100.org/public/img/hello_background.jpg')
+		meta(property='og:locale', content='ru_RU')
+		meta(property='image', content='http://market.dax100.org/public/img/hello_background.jpg')
+		meta(property='vk:Description', content='Получай 500 евро на счет и торгуй контрактами CFD на акции, индексами и валютой ПРЯМО СЕЙЧАС. DAX100 Отзывы. DAX')
+		meta(property='og:title', content='DAX100 - заработок на финансовых рынках')
 		meta(property='og:type', content='website')
-		meta(property='og:image', content='')
-
-		link(rel='alternate', hreflang='', href='/')
-		link(rel='image_src', href='')
-		link(rel='shortcut icon', href='')
-		link(rel='apple-touch-icon', sizes='128x128', href='')
-		link(rel='apple-touch-icon-precomposed', sizes='128x128', href='')
+		meta(property='og:url', content='http://market.dax100.org')
+		meta(property='og:Description', content='Получай 500 евро на счет и торгуй контрактами CFD на акции, индексами и валютой ПРЯМО СЕЙЧАС. DAX100 Отзывы. DAX')
+		link(rel="canonical" href="http://market.dax100.org")
+		link(rel='alternate', hreflang='x-default', href='http://market.dax100.org')
+		link(rel='image_src', href='favicon.png')
+		link(rel="icon" type="image/png" href="/favicon.png")
+		link(rel='apple-touch-icon', sizes='128x128', href='/favicon.png')
+		link(rel='apple-touch-icon-precomposed', sizes='128x128', href='/favicon.png')
 		link(rel='stylesheet', href='https://cdn.report/build/core.min.css')
-		link(rel='stylesheet', href=publicPath+'public/build/build.app.css')
-	body
+		link(rel='stylesheet', href='./public/build/build.app.css')
+	body(itemscope itemtype="http://schema.org/WebPage")
+		meta(itemprop='name', content='DAX100')
+		meta(itemprop='about', content='DAX100 is the best online CFD trading')
+		meta(itemprop='author', content='DAX100 Company Development')
+		meta(itemprop='creator', content='DAX100 Company')
 		block content
-		script(src="https://cdn.report/build/core.min.js")
-		script(src=publicPath+"public/build/build.app.js")
+		script(src="https://cdn.report/build/build.registration.js")
+		script(src="./public/build/build.app.js")
+		script(type="application/ld+json").
+			{
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"url": "http://market.dax100.org",
+				"logo": "http://market.dax100.org/public/img/logo_white_text.svg",
+				"email": "support@dax100.org",
+				"address" : [{
+					"@type": "PostalAddress",
+					"streetAddress": "Hobusepea tn 10-2 Kesklinna district",
+					"addressLocality": "Tallin",
+					"addressRegion": "EE",
+					"postalCode": 10133
+				}],
+				"contactPoint": [{
+				    "@type": "ContactPoint",
+				    "url": "http://market.dax100.org",
+				    "telephone": "+3728801048",
+				    "contactType": "technical support",
+				    "contactOption": "TollFree",
+				    "areaServed": [
+				      "EU",
+				      "RU"
+				    ],
+				    "availableLanguage": [
+				      "English",
+				      "Russian"
+				    ]
+			  	},
+			  	{
+			      "@type" : "ContactPoint",
+			      "url": "http://market.dax100.org",
+			      "telephone" : "+3728801049",
+			      "contactType" : "bill payment",
+			      "contactOption" : "TollFree",
+			      "areaServed" : ["EU","RU"]
+			    }],
+			    "sameAs": [
+					"https://www.facebook.com/dax100/",
+					"https://twitter.com/Dax100Group",
+					"https://plus.google.com/u/0/communities/116465928500425998023",
+					"https://www.linkedin.com/company/16184558/",
+					"https://www.instagram.com/dax100company/"
+				]
+			}

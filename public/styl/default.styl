@@ -1,0 +1,819 @@
+blue = #45a5ec;
+
+
+@font-face
+   font-family CirceLight
+   font-style normal
+   src url('../fonts/Circe-Light.ttf')
+
+@font-face
+   font-family CirceRegular
+   font-style normal
+   src url('../fonts/Circe-Regular.ttf')
+
+@font-face
+  font-family HelveticaMedium
+  font-style normal
+  src url('../fonts/HelveticaNeueCyr-Medium.ttf')
+
+.leadia_develop_text
+	display none !important
+
+body
+	font-family CirceLight
+
+input:-webkit-autofill
+   -webkit-box-shadow inset 0 0 0 50px rgba(255, 255, 255, 1) !important /* Цвет фона */
+   -webkit-text-fill-color #616161 !important /* цвет текста */
+   color #616161 !important /* цвет текста */
+
+::-webkit-input-placeholder
+	color:rgba(255,255,255,.5)
+::-moz-placeholder
+	color:rgba(255,255,255,.5)
+:-moz-placeholder
+	color:rgba(255,255,255,.5)
+:-ms-input-placeholder
+	color:rgba(255,255,255,.5)
+
+.select, input:not([type=checkbox]):not([type=radio]):not([type=submit]), select
+	background rgba(228, 228, 228, 0.28)
+	padding 9px 15px
+	color #fff
+  height 41px
+
+.font__no-wrap
+	white-space nowrap
+
+.visible-none
+   display none
+
+.fx-button
+	text-transform uppercase
+	color #fff
+	border 2px solid transparent
+	background blue
+	transition .3s
+	&:hover
+		border 2px solid #ea8707
+		background transparent
+
+.fx-button-link
+	text-transform uppercase
+	color #fff
+	font-size 18px
+	padding 20px
+	z-index 2
+	position relative
+	border 1px solid #fff
+	display inline-block
+	transition .5s
+	&:hover
+		border 1px solid #ea8707
+		color #ea8707
+
+.fx-wrapper
+	width 100%
+	overflow hidden
+
+.fx-header
+	height 765px
+	width 100%
+	padding-top 60px
+	position relative
+	background-image url('../img/financial.jpg')
+	background-position 50% 62%
+	&:before
+		content ""
+		position absolute
+		width 100%
+		height 100%
+		top 0
+		z-index 1
+
+.fx-poly-graph
+	position absolute
+	z-index 2
+	bottom 0
+	left 0
+	width 100%
+
+.fx-poly-graph__svg
+	position relative
+	bottom -10px
+
+.fx-header__front
+	z-index 3
+	position relative
+
+.fx-header__logo
+  text-align center
+	& img
+		width 165px
+
+.fx-header__text-title
+	font-size 27px
+	font-weight 500
+	line-height 40px
+	color #fff
+
+.fx-preloader
+	display none
+	margin -20px auto 0
+
+.shared-process .fx-preloader
+	display block
+
+.shared-process .fx-button
+	display none
+
+.fx-header__text-title--span
+  text-transform uppercase
+  color #fff
+
+.fx-header__text-descripton
+  color #ea8707
+  margin-top 30px
+  text-transform uppercase
+  font-size 27px
+  font-weight 400
+	line-height 35px
+	& span
+		color #fff
+
+.fx-header__text-descripton-head
+	color #fff
+	text-transform uppercase
+	font-size 27px
+	line-height 40px
+
+.fx-header__text-right-now
+	font-size 27px
+	color blue
+	text-transform uppercase
+
+.fx-header__form-credential-top
+	& label
+		width 49%
+		display inline-block
+
+.fx-label-for-number
+		width 100%
+		display inline-block
+    margin-top 12px
+
+.fx-header__form-submit
+	width 32%
+	& .fx-button
+		width 100%
+		padding 31px 21px
+		white-space nowrap
+		background rgba(234, 135, 7, 0.58)
+		font-size 22px
+	& .fx-button:hover
+		background transparent
+
+.fx-footer__form-submit
+	width 32%
+	& .fx-button
+		width 100%
+    margin-top 10px
+		padding 25px 21px
+		white-space nowrap
+		background rgba(234, 135, 7, 0.58)
+		font-size 20px
+	& .fx-button:hover
+		background transparent
+
+// First flour
+
+.fx-first-flour__left-section-title,
+.fx-third-flour__title,
+.fx-third-flour__description,
+.fx-four-flour__title,
+.fx-four-flour__description,
+.fx-footer-top-text__title,
+.fx-five-flour__description
+	color #000
+	font-size 24px
+	line-height 40px
+	z-index 2
+	position relative
+	& span
+		color #ea8707
+		text-transform uppercase
+
+.fx-third-flour__title,
+.fx-third-flour__description,
+.fx-footer-top-text__title
+	color #fff
+
+.fx-second-flour__first-description,
+.fx-second-flour__second-description
+  color #000
+  font-size 24px
+  font-weight 300
+  line-height 36px
+  letter-spacing 0.6px
+
+.fx-second-flour__first-description
+  margin-top 22px
+
+.fx-second-flour__second-description
+  margin-top 28px
+
+.fx-second-flour__second-description--cover
+  color #6a009b
+  text-transform uppercase
+
+.fx-second-flour__link
+  width 100%
+  color #6a009b
+  font-size 24px
+  font-weight 300
+  line-height 30px
+  letter-spacing 0.6px
+  display inline-block
+  margin-top 72px
+  &:hover
+    cursor pointer
+  &:after
+    background-image url('../img/arrow.png')
+    background-size: 12px 18px;
+    background-repeat no-repeat
+    display: inline-block
+    width: 20px
+    height: 22px
+    margin-left 19px
+    margin-bottom -6px
+    content:""
+
+.fx-second-flour__second-description
+	position relative
+	&:after
+		position absolute
+		content ""
+		width 119px
+		display inline-block
+		height 2px
+		bottom -30px
+		left 0
+		background-color #710687
+
+
+// Second flour
+
+.fx-second-flour
+	height 994px
+	background url('../img/monitor.png') no-repeat 0 30%, url('../img/back1.png') no-repeat 100% 0
+
+.fx-second-flour__text-center
+  margin-top: 15%
+
+.fx-second-flour__text
+	height 550px
+
+.fx-second-flour__title
+	width 100%
+
+.fx-second-flour__description
+	width 100%
+
+.fx-second-flour__title
+	color #6a009b
+	font-size 24px
+	line-height 36px
+	text-transform uppercase
+
+.fx-third-flour
+	height 350px
+	width 100%
+	position relative
+	background-image url('../img/finance_banner.jpg')
+	background-position-x 50%
+	background-position-y 0px
+	background-repeat no-repeat
+	& .row, & .container
+		position relative
+		height 100%
+
+// Four flour
+
+.fx-four-flour__first-text-block
+  width 500px
+  margin-left 15%
+  &:before
+    content "1"
+    position relative
+    right 118px
+    top 205px
+    letter-spacing 0.59px
+    font-family HelveticaMedium
+    font-size 225px
+    color #a894d1
+
+.fx-four-flour__title
+  text-transform uppercase
+  color #6a009b
+
+
+.fx-four-flour__second-text-block
+  width 500px
+  margin-top 130px
+  &:before
+    content "2"
+    position relative
+    right 135px
+    top 205px
+    letter-spacing 0.59px
+    font-family HelveticaMedium
+    font-size 225px
+    color #a894d1
+
+
+.fx-five-flour__description
+	&:after
+		position absolute
+		content ""
+		width 119px
+		display inline-block
+		height 2px
+		bottom -30px
+		left 0
+		background-color #710687
+
+.fx-five-flour
+  background url('../img/back2.png') no-repeat 0% 0%, url('../img/map.png') no-repeat 90% 40%
+  height 982px
+
+.fx-footer
+	height 610px
+	width 100%
+	position relative
+	background-image url('../img/crypto.jpg')
+	background-position 50% 37%
+	background-repeat no-repeat
+
+.fx-five-flour__marp-placeholder
+	position absolute
+	width 100%
+	height 100%
+	top 0
+	left 0
+
+.animated .fx-five-flour__marp-placeholder-austria
+	animation bounce 1s cubic-bezier(0.36,-0.32, 0.41, 1.79) 1s both
+
+.animated .fx-five-flour__marp-placeholder-moscow
+	animation bounce 1s cubic-bezier(0.36,-0.32, 0.41, 1.79) 1.5s both
+
+.animated .fx-five-flour__marp-placeholder-tallinn
+	animation bounce 1s cubic-bezier(0.36,-0.32, 0.41, 1.79) 2s both
+
+.fx-five-flour__marp-placeholder-austria
+	background-image  url('../img/placeholder.svg')
+	background-size 100% auto
+	left 587px
+	top 83px
+
+.fx-five-flour__marp-placeholder-tallinn
+	background-image  url('../img/placeholder.svg')
+	background-size 100% auto
+	left 162px
+	top 69px
+
+.fx-five-flour__marp-placeholder-moscow
+	background-image  url('../img/placeholder.svg')
+	background-size 100% auto
+	left 334px
+	top 47px
+
+.marp-placeholder
+	cursor pointer
+	width 25px
+	position absolute
+	display inline-block
+	height 25px
+	z-index 1
+	opacity 0
+	transform translateY(-100px)
+
+@keyframes bounce {
+	from {
+		opacity 0
+		transform translateY(-100px)
+	}
+	to {
+		opacity 1
+		transform translateY(0)
+	}
+}
+
+.fx-footer-top-text
+  margin-top 70px
+
+.fx-header__form-credential
+  width 66%
+
+.fx-footer-top-contact
+  margin-top 70px
+
+.fx-footer-top-contact__item
+  width 25%
+
+.fx-header__form-submit .fx-button
+  padding 31px 20px
+
+.fx-footer-top-contact-phone,
+.fx-footer-top-contact-logo,
+.fx-footer-top-contact-mail
+  display inline-block
+  text-align center
+
+.fx-footer-top-contact-phone
+  margin-left 10px
+  font-size 18px
+  color #fff
+  &:before
+    background-image url('../img/telephone.svg')
+    background-size 20px 20px;
+    background-repeat no-repeat
+    background-position 0 2px
+    display inline-block
+    width 33px
+    height 25px
+    margin-bottom -6px
+    content ""
+  &:hover
+    color #ea8707
+    cursor pointer
+
+.fx-footer-top-contact-mail
+  font-size 18px
+  color #fff
+  &:before
+    background-image url('../img/close-envelope.svg')
+    background-size 20px 20px;
+    background-repeat no-repeat
+    background-position 3px 7px
+    display inline-block
+    width 33px
+    height 25px
+    margin-bottom -6px
+    content ""
+  &:hover
+    color #ea8707
+    cursor pointer
+
+.fx-footer-top-social
+  margin-top 21px
+  padding-bottom 21px
+
+.fx-footer-top-social__item
+  display inline-block
+  height 23px
+  width 8%
+
+.fx-footer-top-social__item-fb
+  background url("../img/social/fb.svg") no-repeat center
+
+.fx-footer-top-social__item-vk
+  background url("../img/social/vk.svg") no-repeat center
+
+.fx-footer-top-social__item-instagram
+  background url("../img/social/inst.svg") no-repeat center
+
+.fx-footer-top-social__item-ok
+  background url("../img/social/ok.svg") no-repeat center
+
+.fx-footer-top-social__item-yt
+  background url("../img/social/yt.svg") no-repeat center
+
+.fx-footer-top-social__item-gplus
+  background url("../img/social/g+.svg") no-repeat center
+
+.fx-footer-hr
+	height 1px
+	width 100%
+	background #fff
+
+.fx-footer-bottom-text-information
+	font-size 14px
+	color #fff
+	line-height 20px
+	position relative
+	width 100%
+
+.fx-footer-bottom-text-information a
+      font-size 14px
+      line-height 20px
+      color #ea8707
+
+.fx-footer-bottom-contact__list-item-text
+	color #fff
+	font-size 14px
+	& a
+		color #fff
+		font-size 14px
+
+
+@media screen and (min-width: 992px) and (max-width: 1170px)
+  .fx-second-flour
+    background url('../img/monitor.png') no-repeat 0 79%
+    background-size 43%
+    height 510px
+
+  .fx-second-flour__title
+    font-size 20px
+
+  .fx-second-flour__first-description
+    margin-top 0
+    font-size 20px
+    line-height 32px
+
+  .fx-second-flour__second-description
+    margin-top 0
+    font-size 20px
+    line-height 32px
+
+  .fx-second-flour__text-center
+    margin-top 0
+
+  .fx-second-flour__link
+    font-size 20px
+    &:after
+      background-size 10px 14px
+      margin-bottom -8px
+      margin-left 13px
+  //.fx-second-flour__text-center
+  //  margin-top 132%
+
+  .fx-five-flour
+    height 1000px
+
+  .fx-four-flour__first-text-block
+    margin-left 30%
+    margin-top -17%
+
+  .fx-four-flour__second-text-block
+    margin-left 33%
+    margin-top -10%
+
+  .fx-five-flour
+    background url('../img/map.png') no-repeat 50% 95%
+    background-size 50%
+
+	.fx-four-flour__image
+		width 100%
+
+	//.fx-footer-top-form-center .fx-header__form-submit,
+	//.fx-footer-top-form-center .fx-header__form-credential
+		//width 100%
+
+	.fx-footer-top-form-center .fx-header__form-submit
+		margin-top 10px
+
+	.fx-footer-top-form-center .fx-header__form-submit .fx-button
+		padding 15px 20px
+
+@media screen and (max-width: 991px)
+  .fx-header__form-credential
+    width 100%
+
+  .fx-header__form-submit
+    width 100%
+    margin-top 10px
+
+  .fx-footer__form-submit
+    width 100%
+    margin-top 10px
+
+  .fx-second-flour
+    height 1150px
+
+  .fx-second-flour
+    background url('../img/monitor.png') no-repeat 0 5%
+    background-size 85%
+
+//  .fx-second-flour__text-center
+  //  margin-top 160%
+
+  .fx-five-flour
+    height 1000px
+
+  .fx-four-flour__first-text-block
+    margin-left 20%
+    margin-top -25%
+
+  .fx-four-flour__second-text-block
+    margin-left 26%
+    margin-top -15%
+
+  .fx-five-flour
+    background url('../img/map.png') no-repeat 50% 95%
+    background-size 65%
+
+	.fx-header__logo
+		text-align center
+
+	.fx-first-flour__center-section
+		display none
+
+	.fx-four-flour__for-iamge
+		text-align center
+		margin-top 40px
+
+	.fx-resort-block
+		display flex
+		flex-direction column-reverse
+
+	.fx-four-flour
+		padding-top 30px
+
+	.fx-five-flour__marp
+		margin-top 80px
+
+	.fx-preloader
+		display none
+		margin 0px auto
+
+
+@media screen and (max-width: 768px)
+  .fx-four-flour__first-text-block
+    margin-left: 20%
+    margin-top: -25%
+
+  .fx-second-flour
+    background url('../img/monitor.png') no-repeat 0 5%
+    background-size 85%
+
+//  .fx-second-flour__text-center
+  //  margin-top 130%
+
+  .fx-four-flour__second-text-block
+    margin-left: 26%
+    margin-top: -15%
+
+  .fx-five-flour
+    background url('../img/map.png') no-repeat 50% 95%
+    background-size 80%
+
+	.fx-first-flour__left-section
+		text-align center
+
+	.fx-first-flour__left-section-link-web-trader
+		display none
+
+	.fx-first-flour__right-section-image
+		width 100%
+
+	.fx-second-flour__description:before,
+	.fx-five-flour__description:before
+		left 50%
+		transform translateX(-50%)
+
+	.fx-third-flour__description
+		display none
+
+	.fx-third-flour
+		background-position-x 70%
+
+	.fx-four-flour__text-block
+		text-align center
+
+	.fx-preloader
+		display none
+		margin 0px auto
+
+@media screen and (max-width: 700px)
+  .fx-header
+    height 800px
+
+  .fx-second-flour
+    background url('../img/monitor.png') no-repeat 0 5%
+    background-size 85%
+
+//  .fx-second-flour__text-center
+  //  margin-top 130%
+
+  .fx-four-flour__first-text-block
+    margin-left 17%
+    margin-top -30%
+
+  .fx-four-flour__second-text-block
+    margin-left 23%
+    margin-top -15%
+
+  .fx-five-flour
+    background url('../img/map.png') no-repeat 50% 95%
+    background-size 80%
+
+  .fx-footer
+    height 765px
+
+	.fx-four-flour__image
+		width 100%
+
+	.fx-five-flour__marp
+		position relative
+		& img
+			width 100%
+		& .fx-five-flour__marp-placeholder
+			display none
+
+	.fx-footer-top-form-left, .fx-footer-top-form-right
+		display none
+
+	.fx-footer-bottom-text-information
+		font-size 14px
+		line-height 16px
+		padding-left 0px
+		&:before
+			display none
+
+@media screen and (max-width: 630px)
+  .fx-header
+    height 900px
+
+  .fx-second-flour
+    background url('../img/monitor.png') no-repeat 0 5%
+    background-size 85%
+
+  .fx-four-flour__first-text-block
+    margin-left 17%
+    margin-top -30%
+
+  .fx-four-flour__second-text-block
+    margin-left 23%
+    margin-top -15%
+
+  .fx-five-flour
+    background url('../img/map.png') no-repeat 50% 95%
+    background-size 80%
+
+  .fx-footer
+    height 760px
+
+	.fx-footer-bottom-content
+		display none
+
+	.fx-footer-bottom-text
+		margin-top 0
+
+@media screen and (min-width: 319px) and (max-width: 500px)
+  .fx-header
+    height 850px
+
+	.fx-header__text-title
+		font-size 26px
+		line-height 39px
+
+  .fx-header__text-descripton
+		margin-top 15px
+		& span
+			white-space nowrap
+
+  .fx-second-flour__title
+    font-size 20px
+
+  .fx-second-flour__first-description
+    font-size 10px
+
+  .fx-second-flour
+	  background url('../img/monitor.png') no-repeat 0% 30%
+    background-size 50%
+
+
+  .fx-four-flour__first-text-block
+    margin-left 20%
+    margin-top -30%
+
+  .fx-four-flour__second-text-block
+    margin-left 25%
+    margin-top -20%
+
+	.fx-first-flour__right-section-image
+		width initial
+
+	.fx-third-flour__title
+		padding 0 10px
+    font-size 20px
+
+  .fx-footer
+    height 550px
+
+  .fx-footer-top-form-left, .fx-footer-top-form-right
+		display none
+
+  .fx-footer-bottom-text
+		margin-top 0
+
+  .fx-footer-bottom-text-information
+		font-size 12px
+		line-height 14px
+		padding-left 0px
+		& a
+			font-size 12px
+			line-height 14px
+		&:before
+			display none
