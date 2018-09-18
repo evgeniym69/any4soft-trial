@@ -1,6 +1,3 @@
-blue = #45a5ec;
-
-
 @font-face
    font-family CirceLight
    font-style normal
@@ -111,12 +108,6 @@ input:-webkit-autofill
 	& img
 		width 165px
 
-.fx-header__text-title
-	font-size 27px
-	font-weight 500
-	line-height 40px
-	color #fff
-
 .fx-preloader
 	display none
 	margin -20px auto 0
@@ -127,13 +118,19 @@ input:-webkit-autofill
 .shared-process .fx-button
 	display none
 
+.fx-header__text-title
+  font-size 30px
+  font-weight 500
+  line-height 40px
+  color #fff
+
 .fx-header__text-title--span
   text-transform uppercase
   color #fff
 
 .fx-header__text-descripton
   color #ea8707
-  margin-top 30px
+  margin-top 10px
   text-transform uppercase
   font-size 27px
   font-weight 400
@@ -166,7 +163,7 @@ input:-webkit-autofill
 	width 32%
 	& .fx-button
 		width 100%
-		padding 31px 21px
+		padding 24px 21px
 		white-space nowrap
 		background rgba(234, 135, 7, 0.58)
 		font-size 22px
@@ -174,11 +171,11 @@ input:-webkit-autofill
 		background transparent
 
 .fx-footer__form-submit
-	width 32%
+  margin-top 5px
 	& .fx-button
 		width 100%
     margin-top 10px
-		padding 25px 21px
+		padding 20px 21px
 		white-space nowrap
 		background rgba(234, 135, 7, 0.58)
 		font-size 20px
@@ -216,6 +213,9 @@ input:-webkit-autofill
   line-height 36px
   letter-spacing 0.6px
 
+.fx-second-flour__image
+  float right
+
 .fx-second-flour__first-description
   margin-top 22px
 
@@ -225,6 +225,25 @@ input:-webkit-autofill
 .fx-second-flour__second-description--cover
   color #6a009b
   text-transform uppercase
+
+
+
+// Second flour
+.fx-second-flour
+  background: url('../img/monitor.png') no-repeat 0 15%, url('../img/back1.png') no-repeat right bottom
+  height 900px
+
+.fx-second-flour__second-description
+	position relative
+	&:after
+		position absolute
+		content ""
+		width 119px
+		display inline-block
+		height 2px
+		bottom -30px
+		left 0
+		background-color #710687
 
 .fx-second-flour__link
   width 100%
@@ -248,30 +267,11 @@ input:-webkit-autofill
     margin-bottom -6px
     content:""
 
-.fx-second-flour__second-description
-	position relative
-	&:after
-		position absolute
-		content ""
-		width 119px
-		display inline-block
-		height 2px
-		bottom -30px
-		left 0
-		background-color #710687
-
-
-// Second flour
-
-.fx-second-flour
-	height 994px
-	background url('../img/monitor.png') no-repeat 0 30%, url('../img/back1.png') no-repeat 100% 0
-
 .fx-second-flour__text-center
-  margin-top: 15%
+  margin-top 100px
 
 .fx-second-flour__text
-	height 550px
+  margin-top 100px
 
 .fx-second-flour__title
 	width 100%
@@ -300,13 +300,13 @@ input:-webkit-autofill
 // Four flour
 
 .fx-four-flour__first-text-block
-  width 500px
-  margin-left 15%
+  margin-left 100px
+  height 200px
   &:before
     content "1"
     position relative
     right 118px
-    top 205px
+    top 215px
     letter-spacing 0.59px
     font-family HelveticaMedium
     font-size 225px
@@ -316,20 +316,22 @@ input:-webkit-autofill
   text-transform uppercase
   color #6a009b
 
-
 .fx-four-flour__second-text-block
-  width 500px
-  margin-top 130px
+  height 200px
+  margin-top 150px
   &:before
     content "2"
     position relative
     right 135px
-    top 205px
+    top 215px
     letter-spacing 0.59px
     font-family HelveticaMedium
     font-size 225px
     color #a894d1
 
+.fx-five-flour__description
+  width 240px
+  line-height 37px
 
 .fx-five-flour__description
 	&:after
@@ -338,16 +340,16 @@ input:-webkit-autofill
 		width 119px
 		display inline-block
 		height 2px
-		bottom -30px
+		bottom -12px
 		left 0
 		background-color #710687
 
 .fx-five-flour
-  background url('../img/back2.png') no-repeat 0% 0%, url('../img/map.png') no-repeat 90% 40%
   height 982px
+  background url('../img/back2.png') no-repeat 0% 0%, url(../img/map.png) no-repeat 95% 50%
 
 .fx-footer
-	height 610px
+	height 595px
 	width 100%
 	position relative
 	background-image url('../img/crypto.jpg')
@@ -355,6 +357,7 @@ input:-webkit-autofill
 	background-repeat no-repeat
 
 .fx-five-flour__marp-placeholder
+  display none
 	position absolute
 	width 100%
 	height 100%
@@ -412,17 +415,14 @@ input:-webkit-autofill
 .fx-footer-top-text
   margin-top 70px
 
+.fx-footer-top-form-center
+  margin-top: 40px
+
 .fx-header__form-credential
   width 66%
 
 .fx-footer-top-contact
   margin-top 70px
-
-.fx-footer-top-contact__item
-  width 25%
-
-.fx-header__form-submit .fx-button
-  padding 31px 20px
 
 .fx-footer-top-contact-phone,
 .fx-footer-top-contact-logo,
@@ -499,6 +499,7 @@ input:-webkit-autofill
 
 .fx-footer-bottom-text-information
 	font-size 14px
+  margin-top 25px
 	color #fff
 	line-height 20px
 	position relative
@@ -516,12 +517,16 @@ input:-webkit-autofill
 		color #fff
 		font-size 14px
 
-
-@media screen and (min-width: 992px) and (max-width: 1170px)
+@media screen and (max-width: 1170px)
   .fx-second-flour
-    background url('../img/monitor.png') no-repeat 0 79%
-    background-size 43%
     height 510px
+    background-image url('../img/monitor.png')
+    background-repeat no-repeat
+    background-size 45%
+
+  .fx-second-flour__text-center
+    margin-top 30px
+    padding-left: 40px
 
   .fx-second-flour__title
     font-size 20px
@@ -536,39 +541,26 @@ input:-webkit-autofill
     font-size 20px
     line-height 32px
 
-  .fx-second-flour__text-center
-    margin-top 0
-
   .fx-second-flour__link
     font-size 20px
     &:after
       background-size 10px 14px
       margin-bottom -8px
       margin-left 13px
-  //.fx-second-flour__text-center
-  //  margin-top 132%
 
   .fx-five-flour
-    height 1000px
-
-  .fx-four-flour__first-text-block
-    margin-left 30%
-    margin-top -17%
+    background url('../img/map.png') no-repeat 50% 95%, url('../img/back2.png') no-repeat 0% 0%
+    background-size: 50%
+    height 1300px
 
   .fx-four-flour__second-text-block
-    margin-left 33%
-    margin-top -10%
+    margin-top 100px
 
-  .fx-five-flour
-    background url('../img/map.png') no-repeat 50% 95%
-    background-size 50%
+  .fx-four-flour__first-text-block
+    margin-left 0
 
-	.fx-four-flour__image
-		width 100%
-
-	//.fx-footer-top-form-center .fx-header__form-submit,
-	//.fx-footer-top-form-center .fx-header__form-credential
-		//width 100%
+  .fx-footer-top-contact-phone, .fx-footer-top-contact-mail
+    font-size 17px
 
 	.fx-footer-top-form-center .fx-header__form-submit
 		margin-top 10px
@@ -577,41 +569,51 @@ input:-webkit-autofill
 		padding 15px 20px
 
 @media screen and (max-width: 991px)
+  .fx-second-flour
+    height 510px
+    background-image url('../img/monitor.png')
+    background-repeat no-repeat
+    background-size 40%
+
+  .fx-second-flour__text-center
+    padding-left 60px
+
+  .fx-second-flour__title
+    font-size 19px
+
+  .fx-second-flour__first-description, .fx-second-flour__second-description
+    line-height 30px
+
+  .fx-second-flour__link
+    margin-top 50px
+
+  .fx-footer-top-form-left, .fx-footer-top-form-right
+    display none
+
+  .fx-header__form
+    margin-top 20px
+
+  .fx-footer
+    height 665px
+
+  .fx-footer-top-contact
+    margin-top 40px
+
+  .fx-footer__form-submit
+    margin-top 10px
+    width 100%
+    & .fx-button
+      width 100%
+
+  .fx-footer-top-contact-phone, .fx-footer-top-contact-mail
+    font-size 16px
+
   .fx-header__form-credential
     width 100%
 
   .fx-header__form-submit
-    width 100%
     margin-top 10px
-
-  .fx-footer__form-submit
     width 100%
-    margin-top 10px
-
-  .fx-second-flour
-    height 1150px
-
-  .fx-second-flour
-    background url('../img/monitor.png') no-repeat 0 5%
-    background-size 85%
-
-//  .fx-second-flour__text-center
-  //  margin-top 160%
-
-  .fx-five-flour
-    height 1000px
-
-  .fx-four-flour__first-text-block
-    margin-left 20%
-    margin-top -25%
-
-  .fx-four-flour__second-text-block
-    margin-left 26%
-    margin-top -15%
-
-  .fx-five-flour
-    background url('../img/map.png') no-repeat 50% 95%
-    background-size 65%
 
 	.fx-header__logo
 		text-align center
@@ -630,6 +632,9 @@ input:-webkit-autofill
 	.fx-four-flour
 		padding-top 30px
 
+  .fx-five-flour
+    background none
+
 	.fx-five-flour__marp
 		margin-top 80px
 
@@ -637,26 +642,38 @@ input:-webkit-autofill
 		display none
 		margin 0px auto
 
-
-@media screen and (max-width: 768px)
-  .fx-four-flour__first-text-block
-    margin-left: 20%
-    margin-top: -25%
+@media screen and (max-width: 767px)
+  .fx-five-flour
+    background url('../img/map.png') no-repeat 50% 93%, url('../img/back2.png') no-repeat 0% 0%
+    background-size: 56%
+    height 1140px
 
   .fx-second-flour
-    background url('../img/monitor.png') no-repeat 0 5%
-    background-size 85%
-
-//  .fx-second-flour__text-center
-  //  margin-top 130%
-
-  .fx-four-flour__second-text-block
-    margin-left: 26%
-    margin-top: -15%
-
-  .fx-five-flour
-    background url('../img/map.png') no-repeat 50% 95%
+    height 815px
     background-size 80%
+
+  .fx-second-flour__text-center
+    margin-top 545px
+
+  .fx-second-flour__title
+    font-size 19px
+
+  .fx-second-flour__first-description, .fx-second-flour__second-description
+    line-height 30px
+    font-size 18px
+
+  .fx-second-flour__link
+    margin-top 50px
+
+  .fx-footer-top-text
+    margin-top 30px
+
+  .fx-footer
+    height 585px
+
+  .fx-footer-top-text__title
+    font-size 22px
+    line-height 35px
 
 	.fx-first-flour__left-section
 		text-align center
@@ -675,9 +692,6 @@ input:-webkit-autofill
 	.fx-third-flour__description
 		display none
 
-	.fx-third-flour
-		background-position-x 70%
-
 	.fx-four-flour__text-block
 		text-align center
 
@@ -686,30 +700,29 @@ input:-webkit-autofill
 		margin 0px auto
 
 @media screen and (max-width: 700px)
-  .fx-header
-    height 800px
-
   .fx-second-flour
-    background url('../img/monitor.png') no-repeat 0 5%
-    background-size 85%
-
-//  .fx-second-flour__text-center
-  //  margin-top 130%
-
-  .fx-four-flour__first-text-block
-    margin-left 17%
-    margin-top -30%
-
-  .fx-four-flour__second-text-block
-    margin-left 23%
-    margin-top -15%
-
-  .fx-five-flour
-    background url('../img/map.png') no-repeat 50% 95%
+    height 800px
     background-size 80%
 
+  .fx-second-flour__text-center
+    margin-top 475px
+
+  .fx-second-flour__title
+    font-size 19px
+
+  .fx-second-flour__first-description, .fx-second-flour__second-description
+    line-height 30px
+    font-size 18px
+
+  .fx-second-flour__link
+    margin-top 50px
+
   .fx-footer
-    height 765px
+    height 640px
+
+  .fx-footer-top-text__title
+    font-size 21px
+    line-height 30px
 
 	.fx-four-flour__image
 		width 100%
@@ -718,11 +731,8 @@ input:-webkit-autofill
 		position relative
 		& img
 			width 100%
-		& .fx-five-flour__marp-placeholder
+		&.fx-five-flour__marp-placeholder
 			display none
-
-	.fx-footer-top-form-left, .fx-footer-top-form-right
-		display none
 
 	.fx-footer-bottom-text-information
 		font-size 14px
@@ -732,27 +742,38 @@ input:-webkit-autofill
 			display none
 
 @media screen and (max-width: 630px)
-  .fx-header
-    height 900px
+  .fx-second-flour__text-center
+    margin-top 450px
 
-  .fx-second-flour
-    background url('../img/monitor.png') no-repeat 0 5%
-    background-size 85%
+  .fx-four-flour__title
+    font-size 19px
+    line-height 35px
+
+  .fx-five-flour__description
+    font-size 20px
+    line-height 30px
 
   .fx-four-flour__first-text-block
-    margin-left 17%
-    margin-top -30%
+    &:before
+      font-size 200px
+      right 115px
+      top 190px
 
   .fx-four-flour__second-text-block
-    margin-left 23%
-    margin-top -15%
+    &:before
+      font-size 200px
+      right 115px
+      top 190px
 
-  .fx-five-flour
-    background url('../img/map.png') no-repeat 50% 95%
-    background-size 80%
+  .fx-five-flour__description
+    &:after
+      bottom: -15px
 
   .fx-footer
     height 760px
+
+  .fx-footer-top-contact-phone, .fx-footer-top-contact-mail
+    font-size 15px
 
 	.fx-footer-bottom-content
 		display none
@@ -760,13 +781,88 @@ input:-webkit-autofill
 	.fx-footer-bottom-text
 		margin-top 0
 
-@media screen and (min-width: 319px) and (max-width: 500px)
-  .fx-header
-    height 850px
+@media screen and (max-width: 500px)
+  .fx-five-flour
+    background url('../img/map.png') no-repeat 50% 93%
+    background-size: 95%
+    height 1050px
+
+  .fx-four-flour__second-text-block
+    margin-top 60px
+
+  .fx-four-flour__title
+    width 100px
+    font-size 17px
+    line-height 22px
+
+  .fx-five-flour__description
+    font-size 17px
+    line-height 22px
+    width 200px
+
+  .fx-four-flour__first-text-block
+    padding-left 0
+    margin-left 25px
+    &:before
+      font-size 150px
+      right 75px
+      top 150px
+
+  .fx-four-flour__second-text-block
+    padding-left 0
+    margin-left 25px
+    &:before
+      font-size 150px
+      right 80px
+      top 150px
+
+  .fx-five-flour__description
+    &:after
+      bottom: -15px
+
+  .fx-second-flour
+    height 710px
+
+  .fx-second-flour__title
+    font-size 18px
+    line-height 26px
+
+  .fx-second-flour__text-center
+    margin-top 370px
+    padding-left 15px
+
+  .fx-second-flour__first-description, .fx-second-flour__second-description
+    line-height 28px
 
 	.fx-header__text-title
 		font-size 26px
 		line-height 39px
+
+  .fx-four-flour__title
+    font-size 18px
+    line-height 30px
+
+  .fx-five-flour__description
+    font-size 18px
+    line-height 30px
+
+  .fx-four-flour__first-text-block
+    &:before
+      font-size 175px
+      right 115px
+      top 190px
+
+  .fx-four-flour__second-text-block
+    &:before
+      font-size 200px
+      right 115px
+      top 190px
+
+  .fx-five-flour__description
+    &:after
+      bottom: -15px
+
+
 
   .fx-header__text-descripton
 		margin-top 15px
@@ -779,19 +875,6 @@ input:-webkit-autofill
   .fx-second-flour__first-description
     font-size 10px
 
-  .fx-second-flour
-	  background url('../img/monitor.png') no-repeat 0% 30%
-    background-size 50%
-
-
-  .fx-four-flour__first-text-block
-    margin-left 20%
-    margin-top -30%
-
-  .fx-four-flour__second-text-block
-    margin-left 25%
-    margin-top -20%
-
 	.fx-first-flour__right-section-image
 		width initial
 
@@ -801,9 +884,6 @@ input:-webkit-autofill
 
   .fx-footer
     height 550px
-
-  .fx-footer-top-form-left, .fx-footer-top-form-right
-		display none
 
   .fx-footer-bottom-text
 		margin-top 0
@@ -817,3 +897,25 @@ input:-webkit-autofill
 			line-height 14px
 		&:before
 			display none
+
+@media screen and (max-width: 380px)
+  .fx-header__text-title
+    font-size 24px
+    line-height 33px
+
+  .fx-second-flour
+    height 720px
+
+  .fx-second-flour__text-center
+    margin-top 310px
+    padding-left 15px
+
+  .fx-second-flour__second-description
+    &:after
+      bottom -15px
+
+  .fx-second-flour__link
+    margin-top 30px
+
+  .fx-footer-top-social__item
+    width 17%
