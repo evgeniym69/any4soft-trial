@@ -212,15 +212,31 @@ input:-webkit-autofill
   font-weight 300
   line-height 36px
   letter-spacing 0.6px
+  @media screen and (max-width: 640px)
+    font-size 18px
+    line-height 24px
 
 .fx-second-flour__image
   float right
+  height 600px
+  width auto
+  @media screen and (max-width: 1366px)
+    margin-right -150px
+  @media screen and (max-width: 1200px)
+    width 100%
+    height auto
+    float none
+    margin-right 0
 
 .fx-second-flour__first-description
   margin-top 22px
+  @media screen and (max-width: 640px)
+    margin-top 15px
 
 .fx-second-flour__second-description
   margin-top 28px
+  @media screen and (max-width: 640px)
+    margin-top 15px
 
 .fx-second-flour__second-description--cover
   color #6a009b
@@ -229,9 +245,24 @@ input:-webkit-autofill
 
 
 // Second flour
+
 .fx-second-flour
-  background: url('../img/monitor.png') no-repeat 0 15%, url('../img/back1.png') no-repeat right bottom
-  height 900px
+  padding 50px 0
+  background url('../img/back1.png') no-repeat
+  background-position bottom right
+  background-size auto 100%
+
+.fx-second-flour__text-center
+  position relative
+  @media screen and (max-width: 1366px)
+    left 100px
+  @media screen and (max-width: 1200px)
+    left 0
+    margin-bottom 50px
+
+.fx-second-flour__text
+  @media screen and (max-width: 1200px)
+    flex-direction column-reverse
 
 .fx-second-flour__second-description
 	position relative
@@ -254,6 +285,8 @@ input:-webkit-autofill
   letter-spacing 0.6px
   display inline-block
   margin-top 72px
+  @media screen and (max-width: 640px)
+    font-size 18px
   &:hover
     cursor pointer
   &:after
@@ -267,23 +300,16 @@ input:-webkit-autofill
     margin-bottom -6px
     content:""
 
-.fx-second-flour__text-center
-  margin-top 100px
-
-.fx-second-flour__text
-  margin-top 100px
-
-.fx-second-flour__title
-	width 100%
-
 .fx-second-flour__description
 	width 100%
 
 .fx-second-flour__title
-	color #6a009b
-	font-size 24px
-	line-height 36px
-	text-transform uppercase
+  color #6a009b
+  font-size 24px
+  line-height 36px
+  text-transform uppercase
+  @media screen and (max-width: 640px)
+    font-size 20px
 
 .fx-third-flour
 	height 350px
@@ -517,29 +543,7 @@ input:-webkit-autofill
 		color #fff
 		font-size 14px
 
-@media screen and (max-width: 1170px)
-  .fx-second-flour
-    height 510px
-    background-image url('../img/monitor.png')
-    background-repeat no-repeat
-    background-size 45%
-
-  .fx-second-flour__text-center
-    margin-top 30px
-    padding-left: 40px
-
-  .fx-second-flour__title
-    font-size 20px
-
-  .fx-second-flour__first-description
-    margin-top 0
-    font-size 20px
-    line-height 32px
-
-  .fx-second-flour__second-description
-    margin-top 0
-    font-size 20px
-    line-height 32px
+@media screen and (max-width: 1200px)
 
   .fx-second-flour__link
     font-size 20px
@@ -568,21 +572,7 @@ input:-webkit-autofill
 	.fx-footer-top-form-center .fx-header__form-submit .fx-button
 		padding 15px 20px
 
-@media screen and (max-width: 991px)
-  .fx-second-flour
-    height 510px
-    background-image url('../img/monitor.png')
-    background-repeat no-repeat
-    background-size 40%
-
-  .fx-second-flour__text-center
-    padding-left 60px
-
-  .fx-second-flour__title
-    font-size 19px
-
-  .fx-second-flour__first-description, .fx-second-flour__second-description
-    line-height 30px
+@media screen and (max-width: 992px)
 
   .fx-second-flour__link
     margin-top 50px
@@ -643,24 +633,6 @@ input:-webkit-autofill
 		margin 0px auto
 
 @media screen and (max-width: 767px)
-  .fx-five-flour
-    background url('../img/map.png') no-repeat 50% 93%, url('../img/back2.png') no-repeat 0% 0%
-    background-size: 56%
-    height 1140px
-
-  .fx-second-flour
-    height 815px
-    background-size 80%
-
-  .fx-second-flour__text-center
-    margin-top 545px
-
-  .fx-second-flour__title
-    font-size 19px
-
-  .fx-second-flour__first-description, .fx-second-flour__second-description
-    line-height 30px
-    font-size 18px
 
   .fx-second-flour__link
     margin-top 50px
@@ -700,19 +672,6 @@ input:-webkit-autofill
 		margin 0px auto
 
 @media screen and (max-width: 700px)
-  .fx-second-flour
-    height 800px
-    background-size 80%
-
-  .fx-second-flour__text-center
-    margin-top 475px
-
-  .fx-second-flour__title
-    font-size 19px
-
-  .fx-second-flour__first-description, .fx-second-flour__second-description
-    line-height 30px
-    font-size 18px
 
   .fx-second-flour__link
     margin-top 50px
@@ -742,8 +701,6 @@ input:-webkit-autofill
 			display none
 
 @media screen and (max-width: 630px)
-  .fx-second-flour__text-center
-    margin-top 450px
 
   .fx-four-flour__title
     font-size 19px
@@ -820,20 +777,6 @@ input:-webkit-autofill
     &:after
       bottom: -15px
 
-  .fx-second-flour
-    height 710px
-
-  .fx-second-flour__title
-    font-size 18px
-    line-height 26px
-
-  .fx-second-flour__text-center
-    margin-top 370px
-    padding-left 15px
-
-  .fx-second-flour__first-description, .fx-second-flour__second-description
-    line-height 28px
-
 	.fx-header__text-title
 		font-size 26px
 		line-height 39px
@@ -869,12 +812,6 @@ input:-webkit-autofill
 		& span
 			white-space nowrap
 
-  .fx-second-flour__title
-    font-size 20px
-
-  .fx-second-flour__first-description
-    font-size 10px
-
 	.fx-first-flour__right-section-image
 		width initial
 
@@ -902,17 +839,6 @@ input:-webkit-autofill
   .fx-header__text-title
     font-size 24px
     line-height 33px
-
-  .fx-second-flour
-    height 720px
-
-  .fx-second-flour__text-center
-    margin-top 310px
-    padding-left 15px
-
-  .fx-second-flour__second-description
-    &:after
-      bottom -15px
 
   .fx-second-flour__link
     margin-top 30px
