@@ -340,38 +340,42 @@ input:-webkit-autofill
 .fx-four-flour-block-right-image
   width auto
   float left
+  @media screen and (max-width:1500px)
+    width auto
 
 .fx-four-flour__first-text-block
-  height 200px
-  margin-top 100px
   width 100%
-  &:after
-    content "1"
+
+.fx-four-flour__first-inner-number, .fx-four-flour__first-inner-block, .fx-four-flour__second-inner-block, .fx-four-flour__second-inner-number
+  display inline-block
+
+.fx-four-flour__first-inner-number
     position relative
-    right 118px
-    top -155px
+    right 0
+    top 25px
     letter-spacing 0.59px
     font-family HelveticaMedium
     font-size 225px
     color #a894d1
+    display inline-block
+
+.fx-four-flour__second-inner-number
+    position relative
+    right 15px
+    top 25px
+    letter-spacing 0.59px
+    font-family HelveticaMedium
+    font-size 225px
+    color #a894d1
+    display inline-block
 
 .fx-four-flour__title
   text-transform uppercase
   color #6a009b
 
 .fx-four-flour__second-text-block
-  height 200px
-  margin-top 182px
+  margin-top 175px
   width 100%
-  &:after
-    content "2"
-    position relative
-    right 135px
-    top -155px
-    letter-spacing 0.59px
-    font-family HelveticaMedium
-    font-size 225px
-    color #a894d1
 
 .fx-four-flour__description
   width 240px
@@ -395,7 +399,7 @@ input:-webkit-autofill
 	background-position 50% 37%
 	background-repeat no-repeat
 
-.fx-five-flour__marp-placeholder
+/*.fx-five-flour__marp-placeholder
   display none
 	position absolute
 	width 100%
@@ -438,7 +442,7 @@ input:-webkit-autofill
 	height 25px
 	z-index 1
 	opacity 0
-	transform translateY(-100px)
+	transform translateY(-100px)*/
 
 @keyframes bounce {
 	from {
@@ -569,23 +573,23 @@ input:-webkit-autofill
       margin-left 13px
 
   .fx-four-flour
-    height 1540px
+    height 1360px
+
+  .fx-four-flour-block-right
+    text-align center
 
   .fx-four-flour-block-right-image
-    width: 100%
+    width: 80%
     float: none
     height auto
     margin-right 0
+
 
   .fx-four-flour__second-text-block
     margin-left 0
 
   .fx-footer-top-social
     margin-top 35px
-
-  .fx-four-flour__first-text-block
-    margin-left 0
-    margin-top 70px
 
   .fx-four-flour__second-text-block
     margin-top 90px
@@ -622,11 +626,15 @@ input:-webkit-autofill
     font-size 25px
   	line-height 35px
 
+  .fx-header__form-submit .fx-button
+    font-size 20px
+    padding 18px 21px
+
   .fx-second-flour__link
     margin-top 50px
 
   .fx-four-flour
-    height 1350px
+    height 1200px
 
   .fx-footer-top-form-left, .fx-footer-top-form-right
     display none
@@ -635,13 +643,14 @@ input:-webkit-autofill
     margin-top 20px
 
   .fx-footer-top-contact
-    margin-top 40px
+    margin-top 15px
 
   .fx-footer__form-submit
     margin-top 10px
     width 100%
     & .fx-button
       width 100%
+      padding 18px
 
   .fx-footer-top-contact-phone, .fx-footer-top-contact-mail
     font-size 16px
@@ -744,25 +753,31 @@ input:-webkit-autofill
 
 @media screen and (max-width: 630px)
 
+  .fx-third-flour__description
+    font-size 22px
+    line-height 40px
+
+  .fx-third-flour__title
+    font-size 22px
+    line-height 40px
+
   .fx-four-flour__title
-    font-size 19px
+    font-size 18px
     line-height 35px
 
   .fx-four-flour__description
     font-size 20px
     line-height 30px
 
-  .fx-four-flour__first-text-block
-    &:after
-      font-size 200px
-      right 115px
-      top -130px
+  .fx-four-flour__first-inner-number
+    font-size 185px
+    right 0
+    top 25px
 
-  .fx-four-flour__second-text-block
-    &:after
-      font-size 200px
-      right 115px
-      top -130px
+  .fx-four-flour__second-inner-number
+    font-size 185px
+    right 15px
+    top 25px
 
   .fx-four-flour__description
     &:after
@@ -792,6 +807,7 @@ input:-webkit-autofill
     line-height 50px
     margin-top 15px
 
+
   .fx-header__text-descripton-bottom
     margin-top 15px
     font-size 23px
@@ -805,23 +821,21 @@ input:-webkit-autofill
     margin-top 5px
 
   .fx-four-flour
-    height 1000px
-
-  .fx-four-flour__first-text-block
-    margin-left 10%
-    margin-top 40px
-    &:after
-      font-size 175px
-      right 90px
-      top -130px
+    height 815px
+    background-size 90%
 
   .fx-four-flour__second-text-block
-    margin-left 10%
-    margin-top 40px
-    &:after
-      font-size 175px
-      right 100px
-      top -135px
+    margin-top 30px
+
+  .fx-four-flour__first-inner-number
+    font-size 165px
+    right 0
+    top 25px
+
+  .fx-four-flour__second-inner-number
+    font-size 165px
+    right 0
+    top 25px
 
   .fx-four-flour__description
     &:after
@@ -835,15 +849,6 @@ input:-webkit-autofill
   .fx-four-flour__description
     font-size 17px
     line-height 22px
-    width 200px
-
-  .fx-four-flour__title
-    font-size 18px
-    line-height 30px
-
-  .fx-four-flour__description
-    font-size 18px
-    line-height 30px
 
   .fx-header__text-descripton-bottom
 		margin-top 15px
@@ -863,18 +868,20 @@ input:-webkit-autofill
 		&:before
 			display none
 
-@media screen and (max-width: 380px)
+@media screen and (max-width: 400px)
 
   .fx-third-flour__description
     font-size 20px
     line-height 25px
 
   .fx-third-flour__title
-    line-height 25px
-    margin-top 5px
+    line-height 30px
+    margin-top 10px
+    font-size 22px
 
   .fx-button-link
-    margin-top 10px
+    margin-top 15px
+    padding 16px
 
   .fx-header
     height 765px
@@ -896,20 +903,28 @@ input:-webkit-autofill
     margin-top 30px
 
   .fx-four-flour
-    height 915px
+    height 670px
 
-  .fx-four-flour__first-text-block
-    &:after
-      font-size 160px
-      right 90px
+  .fx-four-flour__first-inner-number
+    font-size 120px
+    right 0
+    top 0
 
-  .fx-four-flour__second-text-block
-    &:after
-      font-size 160px
-      right 90px
+  .fx-four-flour__second-inner-number
+    font-size 120px
+    right 0
+    top 0
 
-  .fx-four-flour__first-text-block, .fx-four-flour__second-text-block
-      margin-left 0
+  .fx-four-flour__title
+    width 120px
+    font-size 14px
+    line-height 22px
+
+  .fx-four-flour__description
+    width 160px
+    font-size 14px
+    line-height 22px
+
 
   .fx-footer-top-social__item
     width 17%
