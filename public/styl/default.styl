@@ -38,23 +38,21 @@ input:-webkit-autofill
   height 40px
   padding 10px 15px
   font-size 19px
-  font-family: CirceLight
-
-.font__no-wrap
-	white-space nowrap
-
-.visible-none
-   display none
+  font-family CirceLight
 
 .fx-button
-	text-transform uppercase
-	color #fff
-	border 2px solid transparent
-	background blue
-	transition .3s
-	&:hover
-		border 2px solid #ea8707
-		background transparent
+  background rgba(234, 135, 7, 0.58)
+  font-family CirceLight
+  text-transform uppercase
+  font-size 22px
+  color #fff
+  width 100%
+  white-space nowrap
+  transition .3s
+  border 2px solid transparent
+  &:hover
+    background transparent
+    border 2px solid #ea8707
 
 .fx-button-link
 	text-transform uppercase
@@ -161,26 +159,14 @@ input:-webkit-autofill
     margin-top 12px
 
 .fx-header__form-submit
-	width 32%
-	& .fx-button
-		width 100%
-		padding 31px 21px
-		white-space nowrap
-		background rgba(234, 135, 7, 0.58)
-		font-size 22px
-	& .fx-button:hover
-		background transparent
+  width 32%
+  & .fx-button
+      padding 27px 21px
 
 .fx-footer__form-submit
+  width 32%
 	& .fx-button
-		width 100%
-    margin-top 10px
-		padding 31px
-		white-space nowrap
-		background rgba(234, 135, 7, 0.58)
-		font-size 20px
-	& .fx-button:hover
-		background transparent
+      padding 27px 21px
 
 // First flour
 
@@ -365,7 +351,7 @@ input:-webkit-autofill
 .fx-four-flour__title
   text-transform uppercase
   color #6a009b
-  white-space nowrap
+  white-space pre-wrap
 
 .fx-four-flour__second-text-block
   margin-top 45px
@@ -450,7 +436,7 @@ input:-webkit-autofill
 }
 
 .fx-footer-top-text
-  margin-top 70px
+  margin-top 50px
 
 .fx-footer-top-form-center
   margin-top: 40px
@@ -566,8 +552,27 @@ input:-webkit-autofill
       margin-bottom -8px
       margin-left 13px
 
+  .fx-footer__form-submit .fx-button
+    font-size 20px
+    padding 29px 0
 
   .fx-four-flour-block-right
+    display none
+
+  .fx-footer__form-submit
+    width 30%
+
+  .fx-footer-top-social
+    margin-top 35px
+
+  .fx-footer-top-contact-phone, .fx-footer-top-contact-mail
+    font-size 17px
+
+	.fx-footer-top-form-center .fx-header__form-submit
+		margin-top 10px
+
+
+/*  .fx-four-flour-block-right
     text-align center
 
   .fx-four-flour-block-right-image
@@ -576,28 +581,11 @@ input:-webkit-autofill
     height auto
     margin-right 0
     position relative
-    left -50px
+    left -50px*/
 
-  .fx-four-flour__second-text-block
-    margin-left 0
 
-  .fx-footer-top-social
-    margin-top 35px
-
-  .fx-footer__form-submit
-    width 33%
-
-  .fx-footer__form-submit .fx-button
-    padding 32px 20px
-
-  .fx-footer-top-contact-phone, .fx-footer-top-contact-mail
-    font-size 17px
-
-	.fx-footer-top-form-center .fx-header__form-submit
-		margin-top 10px
-
-	.fx-footer-top-form-center .fx-header__form-submit .fx-button
-		padding 15px 20px
+//  .fx-four-flour__second-text-block
+  //  margin-left 0
 
 
 @media screen and (max-width: 992px)
@@ -618,16 +606,13 @@ input:-webkit-autofill
 
   .fx-header__form-submit .fx-button
     font-size 20px
-    padding 18px 21px
+    padding 12px 21px
 
   .fx-second-flour__link
     margin-top 50px
 
   .fx-footer-top-form-left, .fx-footer-top-form-right
     display none
-
-  .fx-header__form
-    margin-top 20px
 
   .fx-footer-top-contact
     margin-top 15px
@@ -637,7 +622,7 @@ input:-webkit-autofill
     width 100%
     & .fx-button
       width 100%
-      padding 18px
+      padding 12px
 
   .fx-footer-top-contact-phone, .fx-footer-top-contact-mail
     font-size 16px
@@ -805,7 +790,6 @@ input:-webkit-autofill
     margin-top 5px
 
   .fx-four-flour
-    height 815px
     background-size 90%
 
   .fx-four-flour__second-text-block
@@ -826,7 +810,6 @@ input:-webkit-autofill
       bottom: -15px
 
   .fx-four-flour__title
-    width 120px
     font-size 17px
     line-height 22px
 
@@ -889,15 +872,14 @@ input:-webkit-autofill
   .fx-four-flour__first-inner-number
     font-size 120px
     right 0
-    top 0
+    top 15px
 
   .fx-four-flour__second-inner-number
     font-size 120px
-    right 0
-    top 0
+    right 10px
+    top 15px
 
   .fx-four-flour__title
-    width 120px
     font-size 14px
     line-height 22px
 
