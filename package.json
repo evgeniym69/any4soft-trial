@@ -27,10 +27,11 @@
         "style-loader": "^0.21.0",
         "stylus": "^0.54.5",
         "stylus-loader": "^3.0.2",
-        "webpack": "^4.16.2",
-        "webpack-cli": "^3.1.0"
+        "webpack": "^4.16.2"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "webpack-cli": "^3.1.1"
+    },
     "scripts": {
         "clear": "rm -rf public .babelrc .gitignore webpack.config.js node_modules package-lock.json index.html",
         "dev": "webpack --watch",
