@@ -72,6 +72,7 @@ const config = {
               }
         ]
     },
+    optimization: {},
     performance: { hints: false },
     mode: environment,
     plugins: [
